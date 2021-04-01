@@ -1,4 +1,11 @@
 # Django / Python stuff
-env/
+venv/
 *.pyc
 *.sqlite3
+
+# Node
+node_modules/
+
+# Build artifacts
+build/
+.idea/
