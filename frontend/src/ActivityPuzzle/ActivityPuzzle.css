@@ -1,0 +1,25 @@
+.ActivityPuzzle {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    bottom: 0;
+    right: 0;
+}
+
+#puzzleImage {
+    position: relative;
+    width: 100px;
+}
+
+#puzzleImage img {
+    width: 100px;
+}
+
+#overlay {
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

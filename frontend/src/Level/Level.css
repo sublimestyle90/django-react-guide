@@ -1,0 +1,23 @@
+.Level {}
+
+#feedback p {
+    margin-top: 0;
+}
+
+#background {
+    max-width: 660px;
+    max-height: 360px;
+}
+
+#character {
+    position: absolute;
+    top: 31%;
+    left: 15%;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+#stage {
+    position: relative;
+}

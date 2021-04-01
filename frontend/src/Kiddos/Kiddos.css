@@ -1,0 +1,16 @@
+.Kiddos {
+    background-color: white;
+    border-radius: .5em;
+    box-shadow: 0 0 3px rgba(57,62,65, .5);
+    margin: 2em auto;
+    padding: 2em;
+    width: fit-content;
+}
+
+.Kiddos h2:first-of-type {
+    margin-top: 0;
+}
+
+.Kiddos #feedback p {
+    margin-top: 0;
+}
