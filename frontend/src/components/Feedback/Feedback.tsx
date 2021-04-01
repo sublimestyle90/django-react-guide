@@ -1,5 +1,5 @@
 import React from 'react';
-import './Feedback.css';
+import './Feedback.scss';
 
 const Feedback: React.FC = () => (
   <div className="Feedback">

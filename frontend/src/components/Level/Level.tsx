@@ -1,11 +1,12 @@
 import React from 'react';
-import './Level.css';
+import './Level.scss';
 import StepProgressBar from "../StepProgressBar/StepProgressBar";
 
 import Confetti from "react-confetti";
-import {CharacterStates} from "../helper";
+import {CharacterStates} from "../../helper";
 import {ActivityPuzzle} from "../ActivityPuzzle/ActivityPuzzle";
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const marked = require("marked");
 
 const CHARACTER_IMAGES = {
@@ -15,8 +16,10 @@ const CHARACTER_IMAGES = {
     [CharacterStates.FAILURE]: 'failure.gif'
 }
 
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-const IMAGES = require.context('../Images');
+const IMAGES = require.context('../../images');
 
 export interface LevelProps {
     feedback: string,

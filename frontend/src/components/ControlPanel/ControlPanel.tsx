@@ -1,8 +1,8 @@
 import React, {ChangeEvent} from 'react';
-import './ControlPanel.css';
-import {bindHandlersToComponent, CharacterStates, GameStateBase, parseDataType} from "../helper";
+import './ControlPanel.scss';
+import {bindHandlersToComponent, CharacterStates, GameStateBase, parseDataType} from "../../helper";
 import _, {DebouncedFunc} from "lodash";
-import {RestAPI} from "../Api/REST";
+import {RestAPI} from "../../api/REST";
 
 
 interface ControlPanelState extends GameStateBase {
@@ -34,6 +34,7 @@ class ControlPanel extends React.Component<any, ControlPanelState> {
         }
 
         // initialize debounce method so we can call it elsewhere in an event handler
+        // eslint-disable-next-line @typescript-eslint/no-this-alias
         const classScope = this;
         this.debounceGameDataChange = _.debounce(function () {
             classScope.updateGameData();

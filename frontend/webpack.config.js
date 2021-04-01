@@ -13,7 +13,17 @@ module.exports = {
             {
                 test: /\.(ts|js)x?$/,
                 exclude: /node_modules/,
-                use: ['babel-loader'],
+                use: ['babel-loader']
+            },
+            {
+                test: /\.scss$/,
+                use: ["style-loader", "css-loader", "sass-loader"]
+            },
+            {
+                test: /\.(jpg|png|gif)$/,
+                use: {
+                    loader: 'url-loader',
+                },
             },
         ]
     },
@@ -23,6 +33,7 @@ module.exports = {
         path: path.resolve(__dirname, '../backend/static/build/'),
         filename: '[name].js',
     },
+    devtool: 'source-map',
     plugins: [
         // Don't output new files if there is an error
         new webpack.NoEmitOnErrorsPlugin(),

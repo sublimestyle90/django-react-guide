@@ -1,10 +1,10 @@
 import React from 'react';
-import './WorldMap.css';
+import './WorldMap.scss';
 
-import {bindHandlersToComponent} from "../helper";
+import {bindHandlersToComponent} from "../../helper";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-const IMAGES = require.context('../Images/WorldMap', true);
+const IMAGES = require.context('../../images/WorldMap', true);
 
 interface WorldMapProps {
     level: number,

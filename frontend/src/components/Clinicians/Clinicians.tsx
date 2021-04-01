@@ -1,11 +1,11 @@
 import {Component} from 'react';
 import React from 'react';
 import { filter } from 'rxjs/operators';
-import './Clinicians.css';
-import {SocketAPI} from "../Api/Socket";
+import './Clinicians.scss';
+import {SocketAPI} from '../../api/Socket';
 import Kiddos from "../Kiddos/Kiddos";
 import ControlPanel from "../ControlPanel/ControlPanel";
-import {bindHandlersToComponent} from "../helper";
+import {bindHandlersToComponent} from "../../helper";
 import {Observable, Subject} from "rxjs";
 
 

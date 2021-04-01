@@ -1,6 +1,6 @@
 import React from 'react';
 import {Component} from "react";
-import './ActivityPuzzle.css';
+import './ActivityPuzzle.scss';
 
 interface ActivityPuzzleProps {
     activity: number,
@@ -9,7 +9,9 @@ interface ActivityPuzzleProps {
     level: number
 }
 
-const IMAGES = require.context('../Images/Puzzles', true);
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const IMAGES = require.context('../../images/Puzzles', true);
 
 export class ActivityPuzzle extends Component<ActivityPuzzleProps, any> {
     constructor(props: ActivityPuzzleProps) {

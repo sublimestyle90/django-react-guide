@@ -1,7 +1,7 @@
 import {Component} from "react";
 import React from 'react';
-import "react-step-progress-bar/styles.css";
-import './StepProgressBar.css';
+// import "react-step-progress-bar/styles.css";
+import './StepProgressBar.scss';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore - there are no type definitions available for this library
 import {ProgressBar, Step} from 'react-step-progress-bar';

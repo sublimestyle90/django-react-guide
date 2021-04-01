@@ -5,9 +5,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Clinicians from "./Clinicians/Clinicians";
-import Kiddos from "./Kiddos/Kiddos";
-import './App.css';
+import Clinicians from '../Clinicians/Clinicians';
+import Kiddos from "../Kiddos/Kiddos";
+import './App.scss';
 
 // <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
 // <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">

@@ -1,12 +1,12 @@
 import React from 'react';
-import './Kiddos.css';
-import {SocketAPI} from '../Api/Socket';
+import './Kiddos.scss';
+import {SocketAPI} from '../../api/Socket';
 //import Confetti from 'react-confetti';
 
-import {bindHandlersToComponent, CharacterStates, GameStateBase, parseDataType} from '../helper';
+import {bindHandlersToComponent, CharacterStates, GameStateBase, parseDataType} from '../../helper';
 import WorldMap from "../WorldMap/WorldMap";
 import Level from "../Level/Level";
-import {RestAPI} from "../Api/REST";
+import {RestAPI} from "../../api/REST";
 
 interface KiddosProps {
     onConnectEmitSocketId?: (socketId: string) => void;
